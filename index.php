@@ -3,7 +3,7 @@
 <body>
 
 <?php
-echo "My first PHP script!";
+echo "Xin chào Bạn Nam đẹp zai";
 ?>
 
 </body>
