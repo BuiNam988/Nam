@@ -133,8 +133,6 @@ function test_input($data) {
 
     </tbody>
   </table>
-  <footer class="container-fluid">
-    <p>copy: ATN COMPANY</p>
-  </footer>
+ 
   </body>
 </html>
