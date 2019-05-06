@@ -39,12 +39,7 @@
             text-align:center;
             padding-top:15px;
         }
-        .title2{
-            text-align:center;
-            font-size:18px;
-            padding-top:5px;
-            padding-bottom:15px;
-        }
+        
 
     
 </style>
@@ -53,8 +48,8 @@
 
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $AddressErr =$Phone= "";
-$name = $email = $gender = $comment = $Address = $Phone="";
+$nameErr = $emailErr = $genderErr = $addressErr = "";
+$name = $email = $gender = $comment = $Address = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -69,17 +64,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = test_input($_POST["email"]);
   }
     
-  if (empty($_POST["Address"])) {
-    $Address = "";
+  if (empty($_POST["address"])) {
+    $addressErr = "Address is required";
   } else {
-    $Address = test_input($_POST["Address"]);
+    $address = test_input($_POST["address"]);
   }
 
-  if (empty($_POST["Phone"])) {
-    $Phone = "";
-  } else {
-    $Phone = test_input($_POST["Phone"]);
-  }
 
   if (empty($_POST["gender"])) {
     $genderErr = "Gender is required";
@@ -110,11 +100,9 @@ function test_input($data) {
   <span class="error"><?php echo $emailErr;?></span>
   <br><br>
  Address: <input type="text" name="Address">
-  <span class="error"><?php echo $AddressErr;?></span>
+  <span class="error"><?php echo $addressErr;?>
   <br><br>
-  Phone: <input type="text" name="Phone">
-  <span class="error"><?php echo $PhoneErr;?></span>
-  <br><br>
+  
   
   Gender:
   <input type="radio" name="gender" value="female">Female
@@ -131,12 +119,13 @@ function test_input($data) {
         <th>Name</th>
         <th>E-mail</th>
         <th>Address</th>
-        <th>Phone</th>
         <th>Gender</th>
       </tr>
     </thead>
     <tbody>
+     
       <tr>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
