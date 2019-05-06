@@ -110,7 +110,7 @@ function test_input($data) {
   <input type="radio" name="gender" value="other">Other
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  <input type="submit" class="btn btn-success" name="them" id="them" value="Add">  
 
 </form>
 <table class="table table-condensed">
@@ -130,9 +130,11 @@ function test_input($data) {
         <td></td>
         <td></td>
       </tr>
-     
+
     </tbody>
   </table>
-  
+  <footer class="container-fluid">
+    <p>copy: ATN COMPANY</p>
+  </footer>
   </body>
 </html>
