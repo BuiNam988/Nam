@@ -100,7 +100,7 @@ function test_input($data) {
   <span class="error"><?php echo $emailErr;?></span>
   <br><br>
  Address: <input type="text" name="Address">
-  <span class="error"><?php echo $addressErr;?>
+  <span class="error"><?php echo $AddressErr;?></span>
   <br><br>
   
   
@@ -110,7 +110,7 @@ function test_input($data) {
   <input type="radio" name="gender" value="other">Other
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
-  <input type="submit" name="submit" value="Add">  
+  <input type="submit" name="submit" value="Submit">  
 
 </form>
 <table class="table table-condensed">
@@ -123,14 +123,13 @@ function test_input($data) {
       </tr>
     </thead>
     <tbody>
-     
       <tr>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
       </tr>
-
+     
     </tbody>
   </table>
   
