@@ -124,10 +124,10 @@ function test_input($data) {
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>Bùi Phương Nam</td>
+        <td>Nambpgch16025@gmail.com</td>
+        <td>Tứ Kỳ-Hải Dương</td>
+        <td>Male</td>
       </tr>
      
     </tbody>
