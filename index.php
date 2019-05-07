@@ -110,7 +110,7 @@ function test_input($data) {
   <input type="radio" name="gender" value="other">Other
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  <input type="submit" name="submit" value="Add">  
 
 </form>
 <table class="table table-condensed">
